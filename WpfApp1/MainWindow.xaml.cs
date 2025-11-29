@@ -59,10 +59,10 @@ namespace WpfApp1
                 }
 
 
-                TasksPanel.Children.Add(rb);  // ⭐ Adds under the button
+                TasksPanel.Children.Add(rb); 
                 
 
-                input1.Clear();  // optional: clears the input box
+                input1.Clear();  
 
              
                 
