@@ -1,3 +1,6 @@
+
+<img width="985" height="557" alt="Screenshot 2025-11-29 145713" src="https://github.com/user-attachments/assets/6ff16854-00f4-4bdd-b429-917257ff6d71" />
+
 ⚡ **ForceToDo — A Simple & Fast WPF To-Do Application**
 
 ForceToDo is a lightweight and clean To-Do application built using C# and WPF.
