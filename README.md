@@ -72,7 +72,7 @@ Build a full, working Windows desktop app
 
 Clone the repository:
 ```
-git clone https://github.com/yourname/ForceToDo.git
+git clone https://github.com/yasansvr/ForceToDo.git
 
 ```
 Open the .sln file in Visual Studio
