@@ -1,5 +1,7 @@
 
-<img width="985" height="557" alt="Screenshot 2025-11-29 145713" src="https://github.com/user-attachments/assets/6ff16854-00f4-4bdd-b429-917257ff6d71" />
+<img width="982" height="556" alt="image" src="https://github.com/user-attachments/assets/8694389a-44b6-471e-a2cf-a961c189b704" />
+<img width="982" height="556" alt="image" src="https://github.com/user-attachments/assets/a93ffae1-8acf-4de6-80e6-f7d2bf9d5726" />
+
 
 ⚡ **ForceToDo — A Simple & Fast WPF To-Do Application**
 
@@ -81,11 +83,11 @@ Press F5 to run the app
 
 or
 
-Just click the ForceTODO shortcut.
+Download the first version of Force to do from Release section , extract it and open .exe format file
 
 📌 **Future Improvements**
 
-Dark mode
+Dark mode (Done)
 
 Animated UI
 
