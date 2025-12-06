@@ -5,43 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="ForceToDo" Height="450" Width="800" Icon="/ICON.png">
-    <Window.Background>
-        <ImageBrush ImageSource="/360_F_717592756_9Og1qwy7XosLJmeECDQKaFVLjsJc2qJW.jpg"/>
-    </Window.Background>
-    <Grid>
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        Height="450" Width="800" Icon="/ICON.png" Background="#FF292929">
+    <Border >
+        <Grid>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
 
-            <Label Content="FORCE TODO"
+                <Label x:Name="title" Content="FORCE TODO"
                FontSize="28"
                FontWeight="Bold"
                HorizontalAlignment="Center"
-               Margin="0 0 0 30" Background="{x:Null}" Foreground="White" FontFamily="OCR A Extended"/>
+               Margin="0 0 0 30" Background="{x:Null}" Foreground="White" FontFamily="Franklin Gothic Medium"/>
 
-            <TextBlock Text="What do you want to do today ?"
+                <TextBlock x:Name="texty" Text="What do you want to do today ?"
                    HorizontalAlignment="Center"
-                   Margin="0 0 0 10" Background="#FF470065" Foreground="White" FontFamily="OCR A Extended"/>
+                   Margin="0 0 0 10" Foreground="White" FontFamily="Microsoft JhengHei"/>
 
-            <TextBox x:Name="input1"
+                <TextBox x:Name="input1"
                  Width="200"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Center"
                  Height="25"
                  Margin="0 0 0 10" Opacity="0.5" Cursor="IBeam" FontFamily="OCR A Extended" TextAlignment="Center" Foreground="Black" FontWeight="Bold"/>
 
-            <Button Content="ADD TO LIST"
+                <Button Content="ADD TO LIST"
                 Width="120"
                 Height="28"
-                Background="#FFB600F7"
+                Background="#FF959595"
                 Click="Button_Click"
-                Margin="0 0 0 20" BorderBrush="#FFB600F7" Foreground="White" FontFamily="Franklin Gothic Heavy" FontWeight="Bold"/>
+                Margin="0 0 0 20" Foreground="White" FontFamily="Segoe UI Variable Display Semilight" FontWeight="Bold"/>
 
-            <!-- ⭐ This is where the RadioButtons will be added -->
-            <StackPanel x:Name="TasksPanel"
+                <!-- ⭐ This is where the RadioButtons will be added -->
+                <StackPanel x:Name="TasksPanel"
                     HorizontalAlignment="Center"/>
-            <StackPanel x:Name="clearbt"
+                <StackPanel x:Name="clearbt"
                 HorizontalAlignment="Center"/>
-            <StackPanel x:Name="clearItem"
+                <StackPanel x:Name="clearItem"
                 HorizontalAlignment="Center"/>
 
-        </StackPanel>
-    </Grid>
+            </StackPanel>
+
+            <Button x:Name="dayn" Content="Light" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="37" Click="Button_Click_1"/>
+
+
+        </Grid>
+    </Border>
 </Window>

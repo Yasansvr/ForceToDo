@@ -44,29 +44,30 @@ namespace WpfApp1
                 rb.FontSize = 12;
                 rb.Checked += Rb_Checked;
                 rb.Unchecked += Rb_Unchecked;
-                rb.FontFamily = new FontFamily("OCR A Extended");
+                rb.FontFamily = new FontFamily("Microsoft JhengHei");
 
 
-                if (!clearbt1) {
+                if (!clearbt1)
+                {
                     Button bt1 = new Button();
                     bt1.Content = "Clear All Tasks";
                     bt1.Width = 120;
                     bt1.Height = 28;
                     bt1.Click += ClearAllTasks;
-                    bt1.FontFamily = new FontFamily("OCR A Extended");
+                    bt1.FontFamily = new FontFamily("Microsoft JhengHei");
                     clearbt.Children.Add(bt1);
                     clearbt1 = true;
                 }
 
 
                 TasksPanel.Children.Add(rb);  // ⭐ Adds under the button
-                
+
 
                 input1.Clear();  // optional: clears the input box
 
-             
-                
-    }
+
+
+            }
             else
             {
                 MessageBox.Show("You have to DO something!");
@@ -96,8 +97,8 @@ namespace WpfApp1
                 bt2.Height = 28;
                 bt2.Margin = new Thickness(0, 10, 0, 0);
                 bt2.Click += ClearItem;
-                bt2.FontFamily = new FontFamily("OCR A Extended");
-                bt2.Background = (Brush)new BrushConverter().ConvertFrom("#ff03d1");
+                bt2.FontFamily = new FontFamily("Microsoft JhengHei");
+                bt2.Background = (Brush)new BrushConverter().ConvertFrom("#FF959595");
 
                 clearItem.Children.Add(bt2);
 
@@ -123,28 +124,66 @@ namespace WpfApp1
                     selected = cb;
                     break;
                 }
-                
+
             }
 
-            if (selected == null) { 
-                clearItem.Children.Clear ();
+            if (selected == null)
+            {
+                clearItem.Children.Clear();
             }
 
             if (selected != null)
             {
                 TasksPanel.Children.Remove(selected);
-                
+
 
             }
 
 
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if(dayn.Content.ToString() == "Light")
+            {
+                dayn.Content = "Dark";
+                dayn.Background = (Brush)new BrushConverter().ConvertFrom("#FF292929");
+                dayn.Foreground = Brushes.White;
+                this.Background = (Brush)new BrushConverter().ConvertFrom("#b3b3b3");
+                title.Foreground = Brushes.Black;
+                texty.Foreground = Brushes.Black;
+                if (TasksPanel.Children.OfType<CheckBox>().Any())
+                {
+                    foreach (var cb in TasksPanel.Children.OfType<CheckBox>())
+                    {
+                        cb.Foreground = Brushes.Black;
+                    }
+                }
+
+            }
+            else
+            {
+                dayn.Content = "Light";
+                dayn.Background = (Brush)new BrushConverter().ConvertFrom("#b3b3b3");
+                dayn.Foreground = Brushes.Black;
+                this.Background = (Brush)new BrushConverter().ConvertFrom("#FF292929");
+                title.Foreground = Brushes.White;
+                texty.Foreground = Brushes.White;
+                if (TasksPanel.Children.OfType<CheckBox>().Any())
+                {
+                    foreach (var cb in TasksPanel.Children.OfType<CheckBox>())
+                    {
+                        cb.Foreground = Brushes.White;
+                    }
+                }
+
+            }
 
 
 
 
+
+
+        }
     }
-
-
 }
